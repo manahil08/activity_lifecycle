@@ -28,13 +28,15 @@ protected void onStart() {
         super. onResume();
         Log.d(TAG, " onResume Activity Main");
     }
+
+    
     @Override
     protected void onPause() {
         super. onPause();
         Log.d(TAG, " onPause Activity Main");
     }
 
-    
+
     @Override
     protected void onStop() {
         super. onStop();
