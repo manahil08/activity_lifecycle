@@ -17,7 +17,12 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, " onCreate activityMain");
 
     }
-  
+ @Override
+protected void onStart() {
+    super.onStart();
+    Log.d(TAG, "onStart Activity Main");
+}
+
     @Override
     protected void onResume() {
         super. onResume();
