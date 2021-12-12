@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, " onCreate activityMain");
 
     }
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putString("value", "asdf");
+    }
  @Override
 protected void onStart() {
     super.onStart();
@@ -29,7 +33,7 @@ protected void onStart() {
         Log.d(TAG, " onResume Activity Main");
     }
 
-    
+
     @Override
     protected void onPause() {
         super. onPause();
