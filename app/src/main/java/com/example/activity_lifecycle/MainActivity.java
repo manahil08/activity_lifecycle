@@ -33,6 +33,8 @@ protected void onStart() {
         super. onPause();
         Log.d(TAG, " onPause Activity Main");
     }
+
+    
     @Override
     protected void onStop() {
         super. onStop();
