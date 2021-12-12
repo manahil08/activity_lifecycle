@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         String myString = savedInstanceState.getString("value");
         textView.setText(myString);
     }
+
+
         @Override
 protected void onStart() {
     super.onStart();
