@@ -21,7 +21,13 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(savedInstanceState);
         savedInstanceState.putString("value", "asdf");
     }
- @Override
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        String myString = savedInstanceState.getString("value");
+        textView.setText(myString);
+    }
+        @Override
 protected void onStart() {
     super.onStart();
     Log.d(TAG, "onStart Activity Main");
